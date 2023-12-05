@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+   <h1>Calculador de Medias</h1> 
+ 
+   <form action="media.html" method="GET" name="calculatorMedia" onsubmit="calcular();">
+   
+    <div>
+        <label for="nota1">Primeira nota:</label>
+        <input type="text" name="not1" id="nota1"
+        placeholder="Digite a primeira Média."class="form-input">
+    </div>
+    
+   
+    
+    <div>
+    <label for="nota2">Segunda nota:</label>
+    <input type="text" name="not2" id="nota2"
+    placeholder="Digite a segunda Média."
+    class="form-input">
+    </div>
+    <div>
+        <input type="submit" value="Calcular">
+        <input type="reset" value="Limpar Campos">
+        <input type="button" value="mostrar resultado" onclick="calcular();">
+    </div>
+    </form> 
+ 
+    <p class="aprovado"> </p>
+    <p class="situacao"> </p>
+ 
+ <script src="./media.js"></script>
+    </main>
+</body>
+</html>
